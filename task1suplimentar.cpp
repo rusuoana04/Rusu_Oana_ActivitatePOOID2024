@@ -75,13 +75,13 @@ public:
     // Constructor de copiere
     Comenzi(const Comenzi& other)
         : nrComanda(other.nrComanda), idRestaurant(other.idRestaurant), status(other.status) {
-        this->pret = new float[1]; // Aloc? memorie pentru un singur pre?
-        this->pret[0] = other.pret[0]; // Copiaz? pre?ul
+        this->pret = new float[1]; 
+        this->pret[0] = other.pret[0];
     }
 
     // Destructor
     ~Comenzi() {
-        delete[] pret; // Elibereaz? memoria
+        delete[] pret; 
     }
 };
 
